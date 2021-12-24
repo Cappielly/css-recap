@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href=file.css type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_RECAP</title>
+</head>
+
+<body>
+    <div class="all">
+
+        <h2>Basic CSS Crap</h2>
+        <h3>float left</h3>
+        <h4>float each element left for side-by-side effect</h4>
+        <!--Box sec-->
+        <div class="boxes group">
+            <div class="box-a">Box A</div>
+            <div class="box-b">Box B</div>
+        </div>
+        <!--end box sec-->
+
+        <h3>float columns</h3>
+        <h4>remember box-sizing border-box to fit side-by-side elements with padding and border</h4>
+
+        <!--column sec-->
+        <div class="columns group">
+
+            <div class="pfirst">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat quia et nam voluptatibus
+                    a officiis mollitia laborum libero asperiores praesentium at quos dignissimos molestias suscipit
+                    vero tempore, obcaecati quam.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis doloribus quod illo tempora quos natus
+                    vitae architecto alias distinctio necessitatibus fugiat corporis enim cumque consequatur
+                    exercitationem, cum repellendus, repellat eaque!
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, maxime ea harum possimus illo
+                    consectetur eaque similique quidem molestiae tenetur ut dicta delectus, totam necessitatibus
+                    corporis, quae quo incidunt maiores.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aliquid id perspiciatis
+                    cumque maxime! Numquam quasi temporibus nam? Placeat nulla ullam iure praesentium quibusdam, ratione
+                    ipsa cum similique libero necessitatibus?
+                </p>
+            </div>
+            <div class="psec group">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat quia et nam voluptatibus
+                    a officiis mollitia laborum libero asperiores praesentium at quos dignissimos molestias suscipit
+                    vero tempore, obcaecati quam.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam, pariatur modi recusandae
+                    non amet quos ratione placeat vel sapiente officia beatae ducimus ex fugit veniam vitae vero iure
+                    quaerat.
+                </p>
+
+                <div class="isawrap">
+                    <img src="img/sad_Isa.jpg" alt="sadisa">
+                    <div class="boo">
+                        <p>BoooooHooooooHoo!!!
+                    </div>
+
+                </div>
+                <p class="isatext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae id quod nihil pariatur
+                    fuga ratione aspernatur repellendus tenetur omnis modi, culpa ut fugit corrupti dolores itaque dolor
+                    iure harum ipsa.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nulla modi accusantium illo fugiat quo
+                    repellat ipsam dolorum! Qui nisi illo soluta minus fugiat dolorem explicabo ut amet itaque
+                    provident.</p>
+            </div>
+        </div>
+
+        <!--end column sec-->
+
+        <h3>styled nav menu</h3>
+        <h4>navigation menus are list buttons that when clicked send user to other beautiful places</h4>
+
+        <!--nav sec-->
+        <div class="navSec group">
+
+            <h2>Photos</h2>
+            <nav>
+                <ul class="shots">
+                    <li><a href="img/Isa y Yo.jpg">shot1</a></li>
+                    <li><a href="img/Isa_bday.jpg">shot2</a></li>
+                    <li><a href="img/mexDin.jpg">shot3</a></li>
+                    <li><a href="img/sad_Isa.jpg">shot4</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Position sec-->
+
+        <div class="posSec">
+
+            <h3>position property</h3>
+            <h4>the position property has 5 values, relative, absolute, static, fixed and sticky and determines how an
+                element should be positioned in a doc</h4>
+            <p class="pos">
+                By default HTML elements are positioned static, are set to the normal page flow, and not affected by
+                top, bottom, left or right properties
+            </p>
+            <p class="pos">
+                Positioned fixed elements are positioned relative to viewport by top, bottrom, right left values and do
+                not move when scrolling
+            </p>
+
+            <!--position: fixed;-->
+
+
+            <div class="fixed">I'm fixed</div>
+
+            <p class="pos">
+
+                Position absolute elements are positioned to the nearest relative positioned ancestor (instead of to the
+                viewport, like fixed).
+            </p>
+
+            <p class="pos">
+
+                a position: relative element can use TBLR values as well, and will be positioned relative to itself,
+                without affecting surrounding elements. If two elements positioned relative overlap, the one later in
+                the HTML will show on top, unless a z-index declaration places otherwise. (whichever element has the
+                higher z-index value will show on top.)
+            </p>
+
+            <!--positions: relative,absolute;-->
+            <div class="rel">That jerk below is positioned absolute and stuck in me
+                <div class="abs">
+                    Oh shit!! I cant get out!
+                </div>
+            </div>
+
+            <!--photo caption-->
+            <h3>using positions relative and absolute to overlay caption onto photo</h3>
+            <div class="rel2">
+                <img src="img/mexDin.jpg" alt="">
+                <div class="abs2">
+                    food, good!; diahrea, bad : (
+                </div>
+            </div>
+            <h3>position sticky</h3>
+            <p class="pos">
+                sticky elements toggle between relative and fixed, depending on scroll position. Relative until an
+                offset position is met at which place it sticks in place
+            </p>
+
+            <div class="sticky">
+                When scrolling up my ass gets stuck at the viewport bottom.
+            </div>
+            <p>Ah yes, because I'm positioned at the bottom (position: sticky/bottom: 0), that's where I gits stuck.
+                Check me out Jack!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid pariatur porro fuga possimus officiis,
+                aspernatur, repellendus quod autem natus perferendis reiciendis optio, nobis voluptatum ut beatae
+                sapiente eos placeat quam.</p>
+        </div>
+
+
+        <!-- End position sec -->
+
+        <!-- Background Images Sec-->
+
+        <h3>Images can be backgrounds too!</h3>
+        <p class="pos">this flowery background image below has an opacity setting of .4 and is positioned: center
+            meaning the displayed part is from the photos center</p>
+        <div class="bgImg">
+            <div class="bgImg1">
+            </div>
+            <p class="pos">
+                the below flowery background image has no opacity, is positioned: center (vertically) and center
+                (horizontally), and has a background-size value set to 'cover' which fits the entire photo into the div
+                element
+            </p>
+            <div class="bgImg2">
+
+            </div>
+            <p class="pos">
+                the below flowery background image has no opacity, is positioned: center (vertically) and has small size
+                and width values which repeat within the element
+            </p>
+            <div class="bgImg3">
+
+            </div>
+
+            <p class="pos">
+                the below marshy background images are positioned: center/left and center/right within the same rule
+                separated by a comma. They each have a width value of 48% separated by a grey div background color
+            </p>
+            <div class="bgImg4">
+
+            </div>
+
+        </div>
+
+        <!--gradient background sec-->
+
+        <h3>gradient backgrounds, cool as shit</h3>
+
+        <p class="pos">
+            gradients are gradual or smooth transitions of differing colored backgrounds. cool as shit.
+        </p>
+
+        <div class="gradients group">
+            <div class="oval1">
+                i'm cool as shit
+            </div>
+            <div class="oval2">
+                i'm cool as crap
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- end gradient background section -->
+
+
+    <!--Full width background with fixed content-->
+
+    <h3>full width background with fixed with content</h3>
+    <div class="full">
+        <p class="pos">
+            below are two fixed content divs of equal max-width measuring less than the full width of the page, as
+            illustrated by the div borders.
+        </p>
+
+        <div class="head group">
+            <h1>big fat shit show below</h1>
+
+            <nav class="nav2">
+                <ul class="shots">
+                    <li><a href="/img/Isa y Yo.jpg">shot1</a></li>
+                    <li><a href="/img/Isa_bday.jpg">shot2</a></li>
+                    <li><a href="/img/mexDin.jpg">shot3</a></li>
+                    <li><a href="/img/sad_Isa.jpg">shot4</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+
+    <div class="wrap group">
+
+        <p class="pos">
+            layouts flex and adjust when within max-width property. Not so when within width properties
+        </p>
+        <div class="main">
+            <h4>main shit</h4>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex repellat cupiditate, placeat harum officia
+            asperiores quam, consequuntur a esse culpa fugit blanditiis sit alias eos tempora minus dolor accusamus
+            suscipit.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque nulla tempore amet excepturi quia porro
+            quisquam provident necessitatibus. Et at velit ea reiciendis facere perferendis pariatur, illum tenetur quo
+            voluptate.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ex obcaecati, a dicta minus enim optio in
+            numquam asperiores culpa deleniti facere. Laboriosam officia provident repudiandae at ad sit optio!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt commodi, pariatur qui dolor voluptate alias,
+            doloribus, repellat expedita quis nulla voluptatibus dolores perferendis. Repellendus consectetur aliquid
+            dignissimos asperiores aliquam inventore.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis minima maiores molestias, dicta hic incidunt
+            expedita doloremque optio non consequuntur beatae quaerat odit, consectetur labore tempora esse nostrum cum
+            eius!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, esse corporis repellendus, eveniet deleniti
+            error distinctio blanditiis laboriosam beatae mollitia quibusdam qui ex. Saepe, officia facere. Omnis
+            commodi atque unde?
+        </div>
+        <div class="aside">
+            <h4>side shit</h4>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis vitae, ab accusamus dolorem eligendi
+            consequatur. Voluptatem consectetur voluptas odit quis totam dolorem nobis cupiditate! Veritatis, illo? Quod
+            rem officiis enim.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores porro, blanditiis expedita sit aspernatur.
+        </div>
+    </div>
+
+    <!-- End full width fixed content section-->
+
+
+    <!-- Responsive design with media queries-->
+
+
+
+    <div class="contain">
+        <h3 class="buff">Responsive design with media queries and dated floats</h3>
+
+        <div class="head2 group">
+            <h1>media queries and old floats</h1>
+            <nav class="nav3">
+                <ul class="shots">
+                    <li><a href="/img/Isa y Yo.jpg">shot1</a></li>
+                    <li><a href="/img/Isa_bday.jpg">shot2</a></li>
+                    <li><a href="/img/mexDin.jpg">shot3</a></li>
+                    <li><a href="/img/sad_Isa.jpg">shot4</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main2 group">
+            <div class="left">
+                <h5>smart shit</h5>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae porro tenetur obcaecati at
+                    adipisci, quasi est sapiente dolore cupiditate sequi fuga possimus id, in itaque eaque architecto
+                    recusandae! At, consequatur!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At dolorem tempore perspiciatis ut fugiat,
+                    architecto consequatur. Tempora accusamus, ipsa officia expedita aliquid dolore sunt, rerum neque
+                    repellendus tenetur saepe! Nulla.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos animi et libero explicabo sunt tempore
+                    pariatur incidunt ratione, esse earum ex ducimus dolor atque iste, reiciendis porro labore soluta
+                    ipsam!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae porro tenetur obcaecati at
+                    adipisci, quasi est sapiente dolore cupiditate sequi fuga possimus id, in itaque eaque architecto
+                    recusandae! At, consequatur!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At dolorem tempore perspiciatis ut fugiat,
+                    architecto consequatur. Tempora accusamus, ipsa officia expedita aliquid dolore sunt, rerum neque
+                    repellendus tenetur saepe! Nulla.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos animi et libero explicabo sunt tempore
+                    pariatur incidunt ratione, esse earum ex ducimus dolor atque iste, reiciendis porro labore soluta
+                    ipsam!
+                </p>
+            </div>
+            <div class="right">
+                <h5>dumb shit</h5>
+                <img src="/img/Isa y Yo.jpg" alt="isayo" id="isayo">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae porro tenetur obcaecati at
+                    adipisci, quasi est sapiente dolore cupiditate sequi fuga possimus id, in itaque eaque architecto
+                    recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+
+        </div>
+        <footer>
+            <p class="foot">
+                Assembled by freakgeek &reg; alone. All rights reserved for freaks and geeks.
+            </p>
+        </footer>
+    </div>
+
+    <!-- flexbox section-->
+
+    <h3>Flexbox, dumb as a box of rocks!</h3>
+    <h4>Jist kiddin. Flexbox Rocks!!</h4>
+    <p class="pos">
+        with flexbox assigned width values are not needed
+    </p>
+
+    <!--basic form layout with flexbox-->
+    <div class="flexSec">
+        <form action="">
+            <div class="form-row">
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <div class="form-row">
+                <label for="name">Job</label>
+                <input type="text" id="Job">
+            </div>
+        </form>
+    </div>
+    <div class="flexsec2">
+        <div class="flexdiv1">
+            <h2>Main Flexsec Crap</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo earum voluptatum labore praesentium
+                incidunt mollitia atque, suscipit iste magnam sint vel? Culpa nostrum excepturi hic assumenda ipsum
+                temporibus placeat magnam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi consequuntur quaerat, aperiam quibusdam
+                id corrupti doloremque. Dolore, aspernatur assumenda atque esse ipsam eligendi ullam fugit voluptatum!
+                Omnis similique numquam assumenda.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dignissimos aut, in magni illo
+                perferendis, ratione illum vitae, repellendus possimus ullam! Nemo veritatis adipisci placeat eaque
+                expedita molestiae ducimus officia.
+            </p>
+        </div>
+        <div class="flexdiv2">
+            <h4>Side Crap 1</h4>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae in itaque nam eveniet unde odit minima
+                libero ab beatae magnam aspernatur eum, a laboriosam. Iste eligendi voluptatibus ex tempora laudantium?
+            </p>
+        </div>
+        <div class="flexdiv3">
+            <h4>
+                Side Crap 2
+            </h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem hic recusandae vero labore dolor
+                cumque et voluptatem. Numquam vel qui sit voluptatem porro esse voluptatibus sed distinctio? Provident,
+                tempore deserunt.
+            </p>
+        </div>
+    </div>
+    <p class="pos">Yo Flexbox here. Look at the shit I can do</p>
+    <div class="flexsec3">
+        <div class="flexdiv4" style="background-color: aqua;">
+            <h4>column 1</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quasi cupiditate culpa tenetur vitae
+                dolor tempore asperiores, eum cumque expedita iure necessitatibus consequatur facere fugit optio
+                voluptatem soluta id? Porro!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+        <div class="flexdiv4" style="background-color: aquamarine;">
+            <h4>column 2</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quasi cupiditate culpa tenetur vitae
+                dolor tempore asperiores, eum cumque expedita iure
+            </p>
+        </div>
+        <div class="flexdiv4" style="background-color:lightsalmon;">
+            <h4>column 3</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quasi cupiditate
+            </p>
+        </div>
+    </div>
+
+    <h4>these hip ovals used to be so dang square</h4>
+    <div class="flexsec4">
+        <div class="flexdiv5">1</div>
+        <div class="flexdiv5">2</div>
+        <div class="flexdiv5">3</div>
+        <div class="flexdiv5">4</div>
+        <div class="flexdiv5">5</div>
+    </div>
+    <div class="flexsec5">
+        <div class="flexdiv6">I's in da center</div>
+    </div>
+    <div class="flexsec6">
+        <div class="flexdiv7">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quae sapiente, eius ut sed architecto
+                sint voluptas dolores eum veritatis illum dolore earum ab tempore quis ex perspiciatis non cupiditate.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci fugit tenetur quod accusamus tempora
+                facere cumque iusto ullam reprehenderit sit voluptatem hic, sapiente dolore, quo consequuntur debitis
+                alias voluptates? Expedita?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, temporibus eligendi. In accusantium
+                ratione ad dicta, tenetur expedita consequuntur a maxime fuga quidem nesciunt hic eos magnam quod
+                praesentium natus!
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis similique nemo ipsam nihil voluptate
+                sapiente quis, accusantium unde libero rem esse soluta odio delectus provident perspiciatis non
+                voluptatibus a? Magni.
+            </p>
+        </div>
+
+        <div class="flexdiv8">
+            <div class="f8">A</div>
+            <div class="f9">B</div>
+        </div>
+
+    </div>
+    <h2>Box Shadow?? Bunch O' Bullshit!</h2>
+    <div class="boxshadow">
+        <div class="box1">box 1</div>
+        <div class="box2">circle 1</div>
+        <div class="box1">box 2</div>
+        <div class="box2">circle 2</div>
+    </div>
+
+    <h2>Transform</h2>
+    <h4>4 main types of the Transform property: Rotate, Scale, Skew, Postiion (origin and placement).</h4>
+
+    <div class="transform">
+        <h5>rotate my ass 45 degrees</h5>
+
+        <img src="/img/sad_Isa.jpg" class="trans" alt="sad isa">
+
+        <h5>I was the same size as my sis above but got scaled down 50%. And got my ass rotated -45 deg to boot!
+            Remember, even though I shrank, everything else on the page thinks I'm the same size (note margin top)</h5>
+
+        <img src="/img/Isa_bday.jpg" class="scale" alt="isa bday">
+        <h5>Dude I got skewed 15 deg horz here</h5>
+
+        <img src="/img/Isa y Yo.jpg" class="skew" alt="isaYo">
+
+        <h5>Dude I got skewed 15 deg vert here</h5>
+        <img src="/img/Isa y Yo.jpg" class="skew2" alt="isaYo">
+        <h5>Yo! gotta move my pos, gonna transform translate x 50px and y 50px . (dat iss move a little down and to da
+            right yo.)</h5>
+        <img src="/img/mexDin.jpg" class="posit" alt="YoyJu">
+    </div>
+
+    <h2>Transition Animations</h2>
+
+    <div class="transAm group">
+        <h5>Hover to watch me trans</h5>
+        <ol class="shots2">
+            <li><a href="/img/Isa y Yo.jpg">shot1</a></li>
+            <li><a href="/img/Isa_bday.jpg">shot2</a></li>
+            <li><a href="/img/mexDin.jpg">shot3</a></li>
+            <li><a href="/img/sad_Isa.jpg">shot4</a></li>
+        </ol>
+    </div>
+
+    <h5 style="margin-left: 30px;">hover to watch me pop</h5>
+    <div class="florPop">
+        <img src="/img/flower.jpg" class="pop" alt="flor">
+        <div class="popcap">you popped me!</div>
+    </div>
+    <h5 style="margin-left: 20px;">Hover and I gitz dizzy</h5>
+    <div class="circle">jerk circ</div>
+
+    <h5 style="margin-left: 20px;">my bouncy boobs (no hover required!)</h5>
+    <div class="bounce boobs">
+        <div class="bouncy">o</div>
+        <div class="bouncy">o</div>
+        <div class="bouncy">o</div>
+        <div class="bouncy">o</div>
+    </div>
+
+   
+    <div class="isaHead">
+        <h2>The girl's gone outta her head!</h2>
+    <img src="/img/Isa_bday.png" alt="face" class="face">
+    </div>
+
+    <h2 style="color: red; text-shadow: 2px 2px 3px blue;">Bootstrap study to follow on the index.html file</h2>
+
+    
+   
+
+    </div>
+
+</body>
+
+</html>
